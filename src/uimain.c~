@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include "tokenizer.h"
+#include "history.h"
+
+int main()
+{
+  char str[256];
+  char userCommand;
+  short len = 5;
+  List *history = init_history();
+  
+
+  /*Tokenizing is the proccess of dividing a string into tokens*/
+  printf("Welcome to the Tokenizer!\n");
+  printf("\n");
+
+  while(1) {
+    printf("Options:\n");
+    printf("Enter a string = '$'\n");
+    printf("Display history = 'h'\n");
+    printf("Display specific item from history = '!<sequence number>'\n");
+    printf("Quit = 'q'\n");
+    printf("\n");
+    break;
+  }
+
+  
+  
+  return 0;
+}

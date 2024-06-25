@@ -1,0 +1,11 @@
+#comments begin with #
+
+# for convenience, define variable $(OBJS) to list of oobject files
+OBJS = uimain.o tokenizer.c
+
+# make has a "default rule" specifying how to build an "object" file (.o) from a C source file (.c)
+
+#            this rule includes $(CFLAGS) as one of cc's parameters
+CFLAGS=-g -O3 # -g for debug, -O3 for optimization
+
+#first target is built by default. Usually named "all"
